@@ -1,0 +1,200 @@
+#sipStepUp {
+  .leftSideBox {
+    position: relative;
+    background: #526fe4;
+    width: 12%;
+    height: 100vh;
+    display: inline-block;
+  }
+  .rightSideBox {
+    display: inline-block;
+    background-color: #f1f5fa;
+    width: 88%;
+    height: 100dvh;
+    position: absolute;
+
+    // .backBtn {
+    //   color: #595959;
+    //   margin: 10px 5px 0px 20px;
+    //   padding: 0px 3px 1px 0px;
+    //   font-weight: normal;
+    //   border-radius: 3px;
+    //   width: max-content;
+    //   cursor: pointer;
+    // }
+    // .backBtn:hover {
+    //   color: #526fe4;
+    // }
+
+    .rightMain {
+      background-color: #fff;
+      padding: 10px 10px 20px 10px;
+      margin: 50px 20px;
+      position: relative;
+      height: 1000%;
+      .calculatorText {
+        padding: 0px 18px;
+        color: black;
+        .calculatorTitle {
+          padding: 30px 0px 10px;
+          font-weight: bold;
+        }
+        .calculatorDescription {
+          margin: 0 0 10px 0;
+        }
+      }
+      .container {
+        .leftContainer {
+          width: 48%;
+          border: 1px solid #eaebed;
+          margin: 10px;
+          display: inline-block;
+          border-radius: 5px;
+          height: 85%;
+          .sliderArea {
+            margin: 20px;
+            padding: 19px;
+            .slider {
+              width: 100%;
+              .sliderTitle {
+                font-weight: 700;
+                width: 600px;
+              }
+              .sliderInput {
+                margin-left: 5px;
+              }
+            }
+            .invalidInput {
+              color: red;
+              text-align: right;
+              padding: 2px;
+              font-size: 14px;
+              margin: 1px 0px;
+            }
+          }
+        }
+        .rightContainer,
+        .error {
+          position: absolute;
+          width: 45%;
+          height: 75%;
+          display: inline-block;
+          border: 1px solid #eaebed;
+          margin: 10px;
+          padding: 20px;
+          border-radius: 5px;
+          .textForGraph {
+            font-size: 19px;
+            padding: 10px 0px;
+            color: grey;
+            margin: 0px 12px;
+            .spanParaGraph {
+              margin: 15px 0px;
+              .yearsDisplay {
+                color: black;
+                font-weight: bold;
+              }
+            }
+            .sipAmount {
+              color: #2c74b3;
+              margin: -20px 0px;
+              font-weight: bold;
+              padding: 25px 0px;
+            }
+            .currencyRupeeInPara {
+              color: #ff6e31;
+              margin-left: 10px;
+            }
+            .currencyRupeeInPara2 {
+              color: #03c988;
+              margin-left: 10px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .error {
+    color: red;
+  }
+
+  svg,
+  .graphDiv {
+    overflow: visible;
+    font-size: large;
+    margin: 10px 0 0 0;
+  }
+}
+@media (max-width: 1000px) {
+  #sipStepUp {
+    .rightContainer {
+      display: block;
+      width: 90%;
+    }
+    .paraGraph {
+      font-size: small;
+    }
+    .leftSideBox {
+      height: 100cqmax;
+    }
+
+    .leftContainer {
+      width: 95%;
+    }
+    .rightMain {
+      height: 100vh;
+    }
+
+    .paraGraph {
+      font-size: 18px;
+    }
+
+    .paraGraph {
+      font-size: 22px;
+    }
+
+    .sipAmount {
+      font-size: 22px;
+      padding: 20px 5px;
+    }
+
+    .textForGraph {
+      .spanParaGraph {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #sipStepUp {
+    .leftSideBox {
+      display: none;
+    }
+
+    .rightSideBox {
+      width: 100%;
+    }
+
+    .rightContainer {
+      width: 89%;
+    }
+    .leftContainer {
+      width: 95%;
+    }
+    .textForGraph {
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (max-height: 560px) {
+  #sipStepUp {
+    .rightSideBox {
+      height: 100%;
+    }
+  }
+}

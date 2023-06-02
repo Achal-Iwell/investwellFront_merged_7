@@ -1,0 +1,177 @@
+#sipCalculator {
+  .leftSideBox {
+    background-color: #526fe4;
+    display: inline-block;
+    width: 12%;
+    height: 100vh;
+    color: white;
+  }
+
+  .rightSideBox {
+    display: inline-block;
+    width: 88%;
+    height: 100vh;
+    vertical-align: top;
+    background-color: #f1f5fa;
+    // button {
+    //   padding: 2px;
+    //   margin: 7px 0px 0px 25px;
+    //   font-size: 20px;
+    //   border-radius: 5px;
+    //   border: none;
+    // }
+    .rightMain {
+      background-color: white;
+      vertical-align: top;
+      margin: 1% 1.5% 0 1.5%;
+      height: 88vh;
+      .calculatorText {
+        margin: 35px 10px 0px 0px;
+        h2 {
+          padding: 40px 0 0 30px;
+          font-size: 30px;
+        }
+        p {
+          padding: 10px 0 0 30px;
+          font-size: 20px;
+        }
+      }
+
+      .leftContainer {
+        display: inline-block;
+        border: 2px solid #f5f5f5;
+        border-radius: 1%;
+        width: 44%;
+        height: 65vh;
+        margin: 2% 1% 0% 3%;
+        padding: 25px 0 10px 10px;
+        .sliderHead {
+          display: inline;
+          .h3SliderHead {
+            display: inline;
+          }
+        }
+        .input {
+          display: inline;
+          float: right;
+          margin-right: 0px;
+          background-color: #ecf1fc;
+          border: none;
+          text-align: center;
+          width: 20%;
+          height: 4vh;
+        }
+        .sliderPanelDiv{
+          padding: 5px 0;
+          margin: 0 5px 0 0;
+        }
+        .error {
+          background-color: red;
+          color: white;
+          text-align: center;
+          font-size: 18px;
+          margin-top: 15px;
+          padding-bottom: 5px;
+        }
+        .slider {
+          margin-top: 25px;
+        }
+      }
+      .rightContainer {
+        display: inline-block;
+        border: 2px solid #f5f5f5;
+        border-radius: 1%;
+        width: 44%;
+        height: 68.5vh;
+        margin: 2% 0 0 0;
+        vertical-align: top;
+        padding-right: 3%;
+        font-size: 20px;
+
+        .graphHeader {
+          margin: 0px 0px 50px 35px;
+          padding-top: 25px;
+          color: #605e5e;
+
+          .totalAmount {
+            color: #4b6ae2;
+            padding: 5px 0px 5px 0px;
+          }
+          .timePeriod {
+            color: black;
+          }
+          .potentialCapitalGain {
+            color: #ffad85;
+          }
+          .monthlyInvestment {
+            color: #0ba77a;
+          }
+        }
+        .graphFooter {
+          margin-left: 35px;
+        }
+        .h1errComp {
+          color: red;
+          text-align: center;
+        }
+        .h2errComp {
+          color: green;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  svg,
+  .graphFooter {
+    overflow: visible;
+  }
+}
+@media (max-width: 1636px) {
+  #sipCalculator {
+    .rightSideBox .rightMain .container .rightContainer {
+      display: block;
+      width: 48%;
+    }
+    .rightSideBox .rightMain .container .rightContainer,
+    .rightSideBox .rightMain .container .leftContainer {
+      font-size: small;
+    }
+
+    .rightSideBox .rightMain .container .leftContainer .slidersArea {
+      overflow: hidden;
+    }
+
+    .rightSideBox .rightMain .container .rightContainer .calculatorText {
+      font-size: larger;
+      padding: 20px 5px;
+    }
+
+    .calculatorText h2,
+    p {
+      font-size: small;
+    }
+  }
+}
+
+@media (max-width: 524px) {
+  #sipCalculator {
+    .leftSideBox {
+      display: none;
+    }
+
+    .rightSideBox {
+      width: 100%;
+    }
+
+    .rightSideBox .rightMain .container .rightContainer {
+      width: 88%;
+    }
+    .rightSideBox .rightMain .container .leftContainer {
+      width: 96%;
+    }
+    .calculatorText {
+      font-size: 20px;
+    }
+  }
+}

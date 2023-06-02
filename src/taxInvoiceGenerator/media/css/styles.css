@@ -1,0 +1,223 @@
+#taxInvoice{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+ 
+#taxInvoice .screenContainer{
+        width: 75%;
+        margin: 20px auto;
+        background-color: #EEE;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+#taxInvoice .toolTitle{
+    font-size: 2rem;
+    margin-left: 8%;
+    padding: 20px 0;
+    font-weight: 700;
+}
+#taxInvoice .mainContainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#taxInvoice .leftMainBox{
+    width: 65%;
+    background-color: white;
+    padding: 20px 50px;
+    margin-bottom: 25px;
+}
+#taxInvoice .rightMainBox {
+    width: 30%;
+    background-color: white;
+    align-self: flex-start; 
+    display: flex;
+    margin-left: 5%;
+}
+#taxInvoice .headerInfo {
+    width: 100%;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+#taxInvoice .headerInfoBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#taxInvoice .companyName{
+    width: 60%;
+    line-height: 1.5;
+}
+#taxInvoice .invoiceHeading{
+    width: 30%;
+    line-height: 1.5;
+}
+#taxInvoice .heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    margin: 10px 0;
+}
+#taxInvoice .highlight{
+    font-weight: 700;
+    color: black;
+}
+#taxInvoice .alignRight{
+    text-align: right;
+}
+#taxInvoice .alignLeft{
+    text-align: left;
+}
+#taxInvoice .alignCenter{
+    text-align: center;
+}
+.userMessageTextArea{
+    width: 100%;
+    min-height: 200px;
+    line-height: 1.5;
+    margin: 30px 0;
+}
+#taxInvoice .userMessageDiv{
+    width: 100%;
+    min-height: 200px;
+    line-height: 1.5;
+    margin: 30px 0;
+    white-space: pre-wrap;
+}
+#taxInvoice .conclusionMessageTextArea{
+    width: 100%;
+    min-height: 100px;
+    margin: 20px 0;
+}
+#taxInvoice .conclusionMessageDiv{
+    width: 100%;
+    min-height: 100px;
+    margin: 20px 0;
+    white-space: pre-wrap;
+}
+#taxInvoice .itemTable, .taxTable{
+    width: 100%;
+    border-collapse: collapse;
+    line-height: 2;
+    margin-top: 20px;
+}
+#taxInvoice .itemTable th:nth-child(1) {
+    width: 3%;
+}
+#taxInvoice .itemTable th:nth-child(2), .itemTable td:nth-child(2){
+    width: 42%;
+    line-height: 1.5;
+    padding: 2px;
+}
+#taxInvoice .itemTable th:nth-child(3) {
+    width: 15%;
+}
+#taxInvoice .itemTable th:nth-child(4) {
+    width: 20%;
+}
+#taxInvoice .itemTable th:nth-child(5) {
+    width: 20%;
+}
+#taxInvoice .taxTable td:nth-child(1) {
+    width: 30%;
+}
+#taxInvoice .taxTable td:nth-child(2) {
+    width: 30%;
+}
+#taxInvoice .taxTable td:nth-child(3) {
+    width: 38%;
+}
+#taxInvoice .priceInput{
+    font-size: 1rem;
+    font-weight: 700;
+}
+#taxInvoice .itemsTotal{
+    line-height: 3;
+}
+#taxInvoice .lineTotal{
+    color: black;
+}
+#taxInvoice .taxPercentage{
+    width: 50%;
+    text-align: right;
+    margin-right: 2px;
+    padding: 2px;
+    border: none;
+}
+#taxInvoice .taxesTotal{
+    line-height: 3;
+}
+#taxInvoice .conclusionMessage{
+    margin-top: 25px;
+    line-height: 1.5;
+}
+#taxInvoice .rightBoxDownloadBtn{
+    background-color: #215293;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    width: 80%;
+    margin: 25px auto;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+}
+#taxInvoice .rightBoxDownloadBtn:hover{
+    background-color: #003e71;
+    transition: 0.5s;
+}
+#taxInvoice .remove {
+    color: red;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+#taxInvoice .addNewEntity {
+    cursor: pointer;
+    font-weight: bold;
+    color: #146EB4
+}
+#taxInvoice .inputBox{
+    padding: 2px;
+    width: 100%;
+    border: none;
+}
+#taxInvoice .textAreaBox{
+    padding: 2px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    resize: none;
+}
+#taxInvoice .btn{
+    border: none;
+    background: none;
+}
+
+@media screen and (max-width: 1200px) {
+    #taxInvoice .screenContainer{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 950px) {
+    #taxInvoice{
+        font-size: 0.9rem;
+    }
+    #taxInvoice .mainContainer{
+        display: block;
+        width: 80%;
+        margin: 0 20px 0 40px;
+    }
+    #taxInvoice .leftMainBox{
+        width: 100%;
+        margin: 25px 0;
+    }
+    #taxInvoice .rightMainBox{
+        width: 113%;
+        margin: 0;
+    }
+}
